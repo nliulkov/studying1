@@ -8,24 +8,23 @@ public class first {
     talk("Sashko");
     talk("Yuliia");
 
-    double a = 5;
-    System.out.println("Площадь квадрата со стороной " + a + " = " + kvadrat(a));
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + s.l + " = " + kvadrat(s));
 
-    double storona1 = 7;
-    double storona2 = 9;
-    System.out.println("Площадь прямоугольника со сторонами " + storona1 + " и " + storona2 + " = " + premoj(storona1, storona2));
+    Rectangle r = new Rectangle(7, 9);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + premoj(r));
 
   }
     public static void talk(String g) {
     System.out.println("Hello, " + g + "!!!");
     }
 
-    public static double kvadrat(double l) {
+    public static double kvadrat(Square s) {
 
-     return l * l;
+     return s.l * s.l;
     }
 
-    public static double premoj(double a, double b) {
-      return a * b;
+    public static double premoj(Rectangle r) {
+      return r.a * r.b;
     }
 }
