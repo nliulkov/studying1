@@ -8,6 +8,9 @@ public class Square {
   this.l = l;
 
   }
+  public double kvadrat() {
 
+    return this.l * this.l;
+  }
 
 }
